@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  text-align: center;
+}
+
+div#container {
+  width: 200px;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 10% auto 10px;
+  margin-top: auto;
+}
+
+input {
+  text-align: center;
+  margin-top: 100px;
+}
