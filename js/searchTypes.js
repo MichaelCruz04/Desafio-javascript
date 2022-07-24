@@ -13,7 +13,13 @@ async function searchPokemonType() {
       let container = document.getElementById("container");
       pokemons.forEach((pokemon, index) => {
         container.innerHTML +=
-          "<div>" + "#" + index + " - " + pokemon.pokemon.name + "</div>";
+          "<div>#" +
+          index +
+          " - <a href='details.html?name=" +
+          pokemon.pokemon.name +
+          "'>" +
+          pokemon.pokemon.name +
+          "</a></div>";
       });
     })
 
