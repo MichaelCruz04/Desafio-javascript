@@ -1,9 +1,9 @@
-const redirecionamento1 = () => {
+const redirection1 = () => {
   location.href = "searchID.html";
 };
-document.getElementById("btn1").onclick = redirecionamento1;
+document.getElementById("btn1").onclick = redirection1;
 
-const redirecionamento2 = () => {
+const redirection2 = () => {
   location.href = "searchTypes.html";
 };
-document.getElementById("btn2").onclick = redirecionamento2;
+document.getElementById("btn2").onclick = redirection2;

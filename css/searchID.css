@@ -18,4 +18,20 @@ div#container {
 input {
   text-align: center;
   margin-top: 100px;
+  border: none;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+button {
+  background-color: rgb(182, 173, 173);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(225, 216, 216);
 }

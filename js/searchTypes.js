@@ -8,8 +8,8 @@ async function searchPokemonType() {
       return Response.json();
     })
 
-    .then((dados) => {
-      let pokemons = dados.pokemon;
+    .then((data) => {
+      let pokemons = data.pokemon;
       let container = document.getElementById("container");
       pokemons.forEach((pokemon, index) => {
         container.innerHTML +=

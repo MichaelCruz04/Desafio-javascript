@@ -8,23 +8,21 @@ async function buscaPokemon() {
       return Response.json();
     })
 
-    .then((dados) => {
-      console.clear();
-      console.log(dados);
-      document.getElementById("nome").innerHTML = dados["name"];
-      document.getElementById("numero").innerHTML = dados["id"];
+    .then((data) => {
+      document.getElementById("nome").innerHTML = data["name"];
+      document.getElementById("numero").innerHTML = data["id"];
 
-      let img = dados["sprites"]["front_default"];
+      let img = data["sprites"]["front_default"];
       document.getElementById("pic").setAttribute("src", img);
       let movesCotainer = document.getElementById("moves");
       for (let i = 0; i < 5; i++) {
         movesCotainer.innerHTML +=
-          "<p>" + dados["moves"][i]["move"]["name"] + "</p>";
+          "<p>" + data["moves"][i]["move"]["name"] + "</p>";
       }
     })
 
     .catch((error) => {
-      console.log("error:" + error);
+      return Error;
     });
 }
 document.getElementById("btn1").onclick = buscaPokemon;
